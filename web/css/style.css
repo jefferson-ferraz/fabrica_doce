@@ -24,7 +24,7 @@ body{
 #top{
     margin: auto;
     max-width: 1000px;
-    max-height: 5px;
+    max-height: 20px;
     background: linear-gradient(90deg,#b11c4e, #7e1330);
     padding: 5px;
     box-shadow: 0px 0px 5px #6d29298e;
