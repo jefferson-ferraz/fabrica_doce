@@ -55,34 +55,25 @@ header h2{
     font-size: 500%;
     font-weight: lighter;
     text-align: center;
-    margin-top: -65px;
-}
     
-#background{
-    color: transparent;
-    top: 210px;
-    position: absolute;
+    margin: -65px 0px 15px 0px;
+}
+
+#gradient-border{
     max-width: 1000px;
     min-width: 300px;
-    height: 2500px;
     background: linear-gradient(140deg,#b11c4e, #b11c4e,#380808);
-    background-attachment: fixed;
-    border-radius: 0px 0px 0px 0px;
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
+    margin: auto;
     box-shadow: 0px 0px 5px #6d29298e;
 }
 
 main{
     margin: auto;
     position: relative;
-    top: -15px;
+    top: 0px;
     background: linear-gradient(210deg,#fff7e1, #faf3db);
     max-width: 920px;
     min-width: 300px;
-    height: 95%;
     box-shadow: 0px 0px 15px #6d29296e;
 }
 
