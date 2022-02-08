@@ -14,9 +14,9 @@
     <header>
 
         <div id="top">
-            <a href=""><img class="icons" src="images/logo-instagram.svg" alt=""></a>
-            <a href=""><img class="icons" src="images/logo-facebook.svg" alt=""></a>
-            <a href=""><img class="icons" src="images/logo-whatsapp.svg" alt=""></a>
+            <a href=""><img class="icons" src="images/" alt=""></a>
+            <a href=""><img class="icons" src="images/" alt=""></a>
+            <a href=""><img class="icons" src="images/" alt=""></a>
         </div>
         
         <h1>FábricaDoce</h1>
@@ -26,150 +26,150 @@
 
     <div id="gradient-border">
 
+        <main>
 
-    <main>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#produtos">produtos</a></li>
+                    <li><a href="#onde-encontrar">onde encontrar</a></li>
+                    <li><a href="#contato">contato</a></li>
+                </ul>
+            </nav>
+            <section class="container">
 
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="#produtos">produtos</a></li>
-                <li><a href="#onde-encontrar">onde encontrar</a></li>
-                <li><a href="#contato">contato</a></li>
-            </ul>
-        </nav>
-        <section class="container">
+                <h3>Sobre nós</h3>
 
-            <h3>Sobre nós</h3>
+                <picture>
+                    <source media="(max-width: 535px )" srcset="images/img1-small.jpg">
+                    <img class="img-home" src="images/img1.jpg" alt="">
+                </picture>
 
-            <picture>
-                <source media="(max-width: 535px )" srcset="images/img1-small.jpg">
-                <img class="img-home" src="images/img1.jpg" alt="">
-            </picture>
+                
+                
+                <p>A Fábrica Doce entrou no mercado trazendo a novidade em oferecer doces artesanais, dos mais variados tipos, de acordo com os desejos de cada cliente.</p>
+                <br>
+                <p>Esta maneira inovadora e de extrema atenção e cuidado às necessidades dos nossos clientes fez com que a Fábrica Doce ganhasse destaque na região!</p> 
+                <br>
+                <p>Desde então a Fábrica Doce oferece e leva pra você o que há de melhor, sempre com cuidado e atenção à sua satisfação, através de ingredientes criteriosamente selecionados.</p>
+                <br>
+                <p>São vários produtos deliciosos e diferenciados pelo carinho do toque caseiro e artesanal que mantemos desde o início.</p>
+                <br>
+                <p>Estamos sempre atentos aos critérios de seleção de fornecedores e produtos, buscando sempre a melhor qualidade.</p>
+                <br>
+                <p>Nosso maior objetivo é a satisfação dos nossos clientes.</p>
+                
+            </section>
 
-            
-            
-            <p>A Fábrica Doce entrou no mercado trazendo a novidade em oferecer doces artesanais, dos mais variados tipos, de acordo com os desejos de cada cliente.</p>
-            <br>
-            <p>Esta maneira inovadora e de extrema atenção e cuidado às necessidades dos nossos clientes fez com que a Fábrica Doce ganhasse destaque na região!</p> 
-            <br>
-            <p>Desde então a Fábrica Doce oferece e leva pra você o que há de melhor, sempre com cuidado e atenção à sua satisfação, através de ingredientes criteriosamente selecionados.</p>
-            <br>
-            <p>São vários produtos deliciosos e diferenciados pelo carinho do toque caseiro e artesanal que mantemos desde o início.</p>
-            <br>
-            <p>Estamos sempre atentos aos critérios de seleção de fornecedores e produtos, buscando sempre a melhor qualidade.</p>
-            <br>
-            <p>Nosso maior objetivo é a satisfação dos nossos clientes.</p>
-            
-        </section>
+            <section class="container" id="produtos">
 
-        <section class="container" id="produtos">
+                <h3>Produtos</h3>
 
-            <h3>Produtos</h3>
+                <p>Aqui estão algumas das criações da Fábrica Doce.</p>
 
-            <p>Aqui estão algumas das criações da Fábrica Doce.</p>
+                <div id="portfolio">
 
-            <div id="portfolio">
-
-                <div class="project">
-                    <img src="images/img-prod1.png" alt="" class="project-image">
-                    <div class="grid-overlay">
-                       
-                    </div>
-                </div>
-
-                <div class="project">
-                    <img src="images/img-prod2.png" alt="" class="project-image">
-                    <div class="grid-overlay">
+                    <div class="project">
+                        <img src="images/img-prod1.png" alt="" class="project-image">
+                        <div class="grid-overlay">
                         
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img src="images/img-prod2.png" alt="" class="project-image">
+                        <div class="grid-overlay">
+                            
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img src="images/img-prod3.png" alt="" class="project-image">
+                        <div class="grid-overlay">
+                        
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img src="images/img-prod4.png" alt="" class="project-image">
+                        <div class="grid-overlay">
+                        
+                        </div>
+                    </div>
+
+                    <div class="overlay">
+                        <div class="overlay-inner">
+                            <button class="close">X</button>
+                            <img src="" style="width:100%;height:100%">
+                        </div>
+                    </div>
+
+                </div>
+
+                <script>
+
+                    const buttons = document.querySelectorAll('.project');
+                    const overlay = document.querySelector('.overlay');
+                    const overlayImage = document.querySelector('.overlay-inner img');
+
+                    function open(e) {
+                        overlay.classList.add('open');
+                        const src = e.currentTarget.querySelector('img').src;
+                        overlayImage.src = src;
+                    }
+
+                    function close() {
+                        overlay.classList.remove('open');
+                    }
+
+                    buttons.forEach(button => button.addEventListener('click', open));
+                    overlay.addEventListener('click', close);
+
+                </script>
+
+            </section>
+            <section class="container" id="onde-encontrar">
+
+                <h3>Onde encontrar</h3>
+
+                <p>Os produtos da Fábrica Doce estão nestes locais.</p>
+
+                <div id="addresses-box">
+                    <div class="address-btn">
+                        <h4>Padaria dos Sonhos</h4>
+                        <address>Avenida Brasil n.145 - Sumaré</address>
+                    </div>
+                    <div class="address-btn">
+                        <h4>Padaria dos Sonhos</h4>
+                        <address>Avenida Brasil n.145 - Sumaré</address>
+                    </div>
+                    <div class="address-btn">
+                        <h4>Padaria dos Sonhos</h4>
+                        <address>Avenida Brasil n.145 - Sumaré</address>
+                    </div>
+                    <div class="address-btn">
+                        <h4>Padaria dos Sonhos</h4>
+                        <address>Avenida Brasil n.145 - Sumaré</address>
+                    </div>
+                    <div class="address-btn">
+                        <h4>Padaria dos Sonhos</h4>
+                        <address>Avenida Brasil n.145 - Sumaré</address>
+                    </div>
+                    <div class="address-btn">
+                        <h4>Padaria dos Sonhos</h4>
+                        <address>Avenida Brasil n.145 - Sumaré</address>
                     </div>
                 </div>
 
-                <div class="project">
-                    <img src="images/img-prod3.png" alt="" class="project-image">
-                    <div class="grid-overlay">
-                       
-                    </div>
-                </div>
+            </section>
+            <section class="container" id="contato">
+                <h3>Contato</h3>
 
-                <div class="project">
-                    <img src="images/img-prod4.png" alt="" class="project-image">
-                    <div class="grid-overlay">
-                       
-                    </div>
-                </div>
+            </section>
 
-                <div class="overlay">
-                    <div class="overlay-inner">
-                        <button class="close">X</button>
-                        <img src="" style="width:100%;height:100%">
-                    </div>
-                </div>
+        </main>
 
-            </div>
-
-            <script>
-
-                const buttons = document.querySelectorAll('.project');
-                const overlay = document.querySelector('.overlay');
-                const overlayImage = document.querySelector('.overlay-inner img');
-
-                function open(e) {
-                    overlay.classList.add('open');
-                    const src = e.currentTarget.querySelector('img').src;
-                    overlayImage.src = src;
-                }
-
-                function close() {
-                    overlay.classList.remove('open');
-                }
-
-                buttons.forEach(button => button.addEventListener('click', open));
-                overlay.addEventListener('click', close);
-
-            </script>
-
-        </section>
-        <section class="container" id="onde-encontrar">
-
-            <h3>Onde encontrar</h3>
-
-            <p>Os produtos da Fábrica Doce estão nestes locais.</p>
-
-            <div id="addresses-box">
-                <div class="address-btn">
-                    <h4>Padaria dos Sonhos</h4>
-                    <address>Avenida Brasil n.145 - Sumaré</address>
-                </div>
-                <div class="address-btn">
-                    <h4>Padaria dos Sonhos</h4>
-                    <address>Avenida Brasil n.145 - Sumaré</address>
-                </div>
-                <div class="address-btn">
-                    <h4>Padaria dos Sonhos</h4>
-                    <address>Avenida Brasil n.145 - Sumaré</address>
-                </div>
-                <div class="address-btn">
-                    <h4>Padaria dos Sonhos</h4>
-                    <address>Avenida Brasil n.145 - Sumaré</address>
-                </div>
-                <div class="address-btn">
-                    <h4>Padaria dos Sonhos</h4>
-                    <address>Avenida Brasil n.145 - Sumaré</address>
-                </div>
-                <div class="address-btn">
-                    <h4>Padaria dos Sonhos</h4>
-                    <address>Avenida Brasil n.145 - Sumaré</address>
-                </div>
-            </div>
-
-        </section>
-        <section class="container" id="contato">
-            <h3>Contato</h3>
-
-        </section>
-
-    </main>
-</div>
+    </div>
 </body>
 
 </html>
