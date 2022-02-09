@@ -10,7 +10,11 @@
 }
 @font-face {
     font-family: 'text';
-    src: url(../fonts/Josefin_Slab/JosefinSlab-VariableFont_wght.ttf) format('truetype');
+    src: url(../fonts/Josefin_Slab/JosefinSlab-VariableFont_wght.ttf) format('truetype');   
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 body{
