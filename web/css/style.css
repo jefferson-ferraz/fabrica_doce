@@ -44,19 +44,31 @@ header{
 header h1{
     position: relative;
     font-family: 'euphoric';
-    font-size: 420%;
+    font-size: 6em;
     font-weight: normal;
     text-align: center;
-    margin-top: 10px;
+    margin: 10px 0px 64px 0px;
+}
+
+@media (max-width: 500px){
+    header h1{
+        font-size: 18vw;
+    }
 }
 
 header h2{
     font-family: 'signature';
-    font-size: 500%;
+    font-size: 5em;
     font-weight: lighter;
     text-align: center;
-    
-    margin: -65px 0px 15px 0px;
+    margin: -85px 0px 15px 0px;
+}
+
+@media (max-width: 500px){
+    header h2{
+        font-size: 16vw;
+        margin: -76px 0px 15px 0px;
+    }
 }
 
 #gradient-border{
