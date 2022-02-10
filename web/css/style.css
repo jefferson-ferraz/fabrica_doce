@@ -359,13 +359,14 @@ textarea{
 }
 
 .form button{
+    width: 150px;
     display: block;
     padding: 10px;
     font: inherit;
     border: none;
     text-transform: uppercase;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 .form button:hover,
