@@ -143,10 +143,11 @@ nav a:hover{
 @media (max-width: 535px){
     nav{
         position: relative;
+        background: #fbeaca;
     }
     nav li{
         font-size: 1.8em;
-        background: linear-gradient(90deg, #fbd5934e, #fcefd700, #fbd5934e);
+        background: linear-gradient(90deg, #fbd5934e, #fbd5931b, #fbd5934e);
         display: block;
         padding: 2px 0px 2px 0px;
         margin: 3px;
