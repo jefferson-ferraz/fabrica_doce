@@ -20,7 +20,7 @@ html{
 body{
     margin: 0px;
     height: 100%;
-    background: linear-gradient(140deg,#ffefd4, #c08b30);
+    background: linear-gradient(140deg,#ffefd4, #d5982d);
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -87,7 +87,7 @@ header h2{
 main{
     margin: auto;
     position: relative;
-    top: 0px;
+    padding-bottom: 1px;
     background: linear-gradient(210deg,#fff7e1, #faf3db);
     max-width: 940px;
     min-width: 300px;
@@ -95,9 +95,15 @@ main{
 }
 
 nav{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
     width: 100%;
-    height: 80px;
-    background: linear-gradient(#cfcbb596, #ddcc9c96);
+    background: linear-gradient(#fbeaca, #fcefd7, #ffebc8);
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: white;
+    box-shadow: 0px 0px 5px #6d29296e;
 }
 
 nav ul{
@@ -112,13 +118,15 @@ nav li{
     font-family: 'euphoric';
     font-size: 2.1em;
     font-weight: normal;
-    padding: 20px 20px 0px 20px;
+    
+    padding: 10px 20px 10px 20px;
     display: inline-block;
+    
 }
 
 nav a{
     text-decoration: none;
-    color: #000000;
+    color: black;
 }
 
 nav a:hover{
@@ -128,39 +136,65 @@ nav a:hover{
 
 @media (max-width: 620px){
     nav li{
-        padding: 20px 10px 0px 10px;
+        padding: 10px 10px 10px 10px;
     }
 }
 
 @media (max-width: 535px){
     nav{
-        height: 220px;
+        position: relative;
     }
     nav li{
+        font-size: 1.8em;
+        background: linear-gradient(90deg, #fbd5934e, #fcefd700, #fbd5934e);
         display: block;
-        padding: 10px 0px 0px 0px;
+        padding: 2px 0px 2px 0px;
+        margin: 3px;
+        border-radius: 0px;
     }
 }
 
 .container{
     background: #cfcbb544;
     padding: 10px 0px 30px 0px;
-    margin: 10px;
+    margin: 12px;
     border-radius: 10px 10px 10px 10px;
     overflow: auto;
+    
 }
 
 .container h3{
     font-family: 'euphoric';
     font-weight: normal;
     margin: 0px;
-    padding: 0px 15px;
+    padding: 50px;
     font-size: 3em;
+}
+
+@media (max-width: 535px){
+    .container h3{
+        padding: 30px;
+    }
 }
 
 @media (max-width: 340px){
     .container h3{
         font-size: 2.5em;
+        padding: 20px;
+    }
+}
+
+.container p{
+    font-family: 'text';
+    margin: 0px;
+    padding: 10px 40px 0px 40px;
+    font-size: 1.4em;
+    text-align: justify;
+}
+
+@media (max-width: 535px){
+    .container p{
+        padding: 10px 20px 0px 20px;
     }
 }
 
@@ -170,7 +204,7 @@ nav a:hover{
     display: flex;
     float: right;
     margin: 10px 40px 5px 15px;
-    border: #f2f2f2 solid 5px;
+    border: white solid 5px;
     box-shadow: 0px 0px 5px #a056567e;
 }
 
@@ -186,21 +220,6 @@ nav a:hover{
         float: none;
         margin: 20px auto;
         width: 60%;
-    }
-}
-
-.container p{
-    font-family: 'text';
-    text-indent: 30px;
-    margin: 0px;
-    padding: 10px 40px 0px 40px;
-    font-size: 1.4em;
-    text-align: justify;
-}
-
-@media (max-width: 535px){
-    .container p{
-        padding: 10px 20px 0px 20px;
     }
 }
 
@@ -221,7 +240,7 @@ nav a:hover{
     width: 100%;
     margin: 0;
     opacity: 0.9;
-    border: #f2f2f2 solid 5px;
+    border: white solid 5px;
     box-shadow: 0px 0px 5px #a056567e;
 }
 
@@ -307,7 +326,7 @@ address{
     margin: 25px 10px 0px 10px;
     width: 210px;
     padding: 20px ;
-    background: #f2f2f2;
+    background: white;
     box-shadow: 0px 0px 5px #a056567e;
     
 }
@@ -316,6 +335,8 @@ address{
 }
 
 form{
+    font-family: 'text';
+    font-size: 1.4em;
     margin: auto;
     width: 85%;
     max-width: 32em;
@@ -355,8 +376,8 @@ form input:focus,
 form textarea:hover,
 form textarea:focus{
     outline: none;
-    border-color: #a05656;
-    box-shadow: 0px 0px 2px #a05656aa;
+    
+    box-shadow: 0px 0px 5px #a056567e;
 }
 
 form button{
@@ -375,9 +396,6 @@ form button:focus{
     outline: none;
     background: #c08b30;
 }
-
-
-
 
 footer{
     margin: 50px auto 0px auto;
