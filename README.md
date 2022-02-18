@@ -1,4 +1,2 @@
-# fabrica_doce
+# Fábrica Doce's homepage.
  Website
-
-Developed by jeffersON
