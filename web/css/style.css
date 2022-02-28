@@ -24,8 +24,8 @@ html {
 
 body {
     margin: 0px;
-    
-    background: linear-gradient(140deg,#ffefd4, #d5982d);
+    background-repeat: no-repeat;
+    background: linear-gradient(140deg,#ffefd4, #fde7c0, #cfa968);
     
 }
 
@@ -100,7 +100,7 @@ header {
 }
 
 @media (max-width: 450px) {
-    
+
     #container-logo-top h1 {
         display: block;
         font-size: 4em;
@@ -128,39 +128,6 @@ header {
     }
 }
 
-
-
-/*
-header h1 {
-    position: relative;
-    font-family: 'euphoric';
-    font-size: 6em;
-    font-weight: normal;
-    text-align: center;
-    margin: 10px 0px 64px 0px;
-}
-
-@media (max-width: 500px) {
-    header h1 {
-        font-size: 18vw;
-    }
-}
-
-header h2 {
-    font-family: 'signature';
-    font-size: 5em;
-    font-weight: lighter;
-    text-align: center;
-    margin: -85px 0px 15px 0px;
-}
-
-@media (max-width: 500px) {
-    header h2 {
-        font-size: 16vw;
-        margin: -76px 0px 15px 0px;
-    }
-}
-*/
 #gradient-border {
     max-width: 1000px;
     min-width: 300px;
@@ -221,16 +188,19 @@ nav a:hover {
 }
 
 @media (max-width: 620px) {
+
     nav li {
         padding: 10px 10px 10px 10px;
     }
 }
 
 @media (max-width: 535px) {
+
     nav {
         position: relative;
         background: #fbeaca;
     }
+
     nav li {
         font-size: 1.8em;
         background: linear-gradient(90deg, #fbd5934e, #fbd5931b, #fbd5934e);
@@ -284,6 +254,10 @@ nav a:hover {
     .container p {
         padding: 10px 20px 0px 20px;
     }
+}
+
+.container em {
+    font-weight: 600;
 }
 
 .img-home {
@@ -467,7 +441,7 @@ form textarea:focus {
 }
 
 form button {
-    background: white;
+    background: #f0daab;
     margin: 20px auto 10px;
     display: block;
     padding: 15px 60px 10px;
@@ -484,13 +458,13 @@ form button {
 form button:hover,
 form button:focus {
     outline: none;
-    background: #f0cd83;
+    background: #f0c872;
 }
 
 #logo-bottom {
     display: block;
-    margin: 80px auto;
-    width: 200px;
+    margin: 40px auto 80px auto;
+    width: 150px;
     filter: drop-shadow(0px 5px 3px #00000093);
 }
 
