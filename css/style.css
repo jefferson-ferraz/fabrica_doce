@@ -5,6 +5,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Poiret+One&family=Style+Script&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@400;900&family=Emilys+Candy&family=Ephesis&family=Petit+Formal+Script&family=Style+Script&family=Trochut:ital,wght@0,400;0,700;1,400&display=swap');
+
 
 @font-face {
     font-family: 'euphoric';
@@ -48,13 +50,6 @@ header {
     margin: 20px auto 0px auto;
 }
 
-@media (max-width: 700px) {
-
-    #container-logo-top {
-        margin: 0px auto 0px auto;
-    }
-}
-
 @media (max-width: 450px) {
     
     #container-logo-top {
@@ -63,15 +58,16 @@ header {
 }
 
 #logo-top {
-    width: 250px;
-    margin: 0px 0px -30px -10px;
+    width: 220px;
+    margin: 0px 0px -24px -10px;
     filter: drop-shadow(0px 5px 3px #00000041);   
 }
 
 @media (max-width: 700px) {
 
     #logo-top {
-        width: 200px;
+        width: 180px;
+        margin: 0px 0px -20px -10px;
     }
 }
 
@@ -85,15 +81,15 @@ header {
 #container-logo-top h1 {
     font-family: 'Style Script';
     display: inline-block;
-    margin: 0px 0px 0px -30px;
+    margin: 0px 0px 0px -26px;
     filter: drop-shadow(0px 5px 3px #00000041);
-    font-size: 8em;
+    font-size: 6em;
 }
 
 @media (max-width: 700px) {
     #container-logo-top h1 {
-        font-size: 6em;
-        margin: 30px 0px 10px -20px;
+        font-size: 5em;
+        margin: 0px 0px 0px -22px;
     }
 }
 
@@ -115,7 +111,7 @@ header {
 
 #container-logo-top h2 {
     font-family: 'Josefin Slab', serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 2em;
     margin: 20px 0px 40px 0px;
 }
@@ -245,7 +241,7 @@ nav a:hover {
     margin: 0px;
     padding: 10px 40px 0px 40px;
     font-size: 1.45em;
-    text-align: justify;
+    
 }
 
 @media (max-width: 535px) {
