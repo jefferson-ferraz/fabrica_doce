@@ -361,6 +361,11 @@ address {
     text-align: center;
 }
 
+#addresses-box a {
+    text-decoration: none;
+    color: black;
+}
+
 .address-btn {
     position: relative;
     display: inline-block;
