@@ -226,7 +226,7 @@ nav a:hover {
     margin: 0px;
     padding: 10px 40px 0px 40px;
     font-size: 1.45em;
-    
+    line-height: 1.2em;
 }
 
 @media (max-width: 535px) {
