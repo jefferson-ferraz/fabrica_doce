@@ -46,10 +46,11 @@ header {
 
 
 
+
 #container-logo-top {
     position: relative;
     text-align: center;
-    margin: 50px auto;
+    margin: 0px auto;
     
 }
 
@@ -57,8 +58,9 @@ header {
     
     
     width: 250px;
-    margin: 0px 10px -30px -80px;
-    filter: drop-shadow(0px 5px 3px #00000093);
+    margin: 0px 0px -30px -10px;
+    filter: drop-shadow(0px 5px 3px #00000041);
+    
 }
 
 #mila {
@@ -78,11 +80,19 @@ font-family: 'Style Script', cursive;
 
 #mila h1 {
     font-family: 'Style Script';
-    margin: 0px 0px 0px 0px;
-    
+    color: #5e3519;
+    margin: 0px 0px 0px -40px;
+    filter: drop-shadow(0px 5px 3px #00000041);
     
     
     font-size: 8em;
+}
+
+#container-logo-top hr {
+    border: 4px solid burlywood;
+    border-radius: 4px;
+    width: 800px;
+    margin-top: -10px;
 }
 
 #container-logo-top h2 {
@@ -90,8 +100,7 @@ font-family: 'Style Script', cursive;
     font-weight: 600;
     font-size: 2em;
     
-    margin: 0;
-    padding: 0;
+    margin: 20px 0px 40px 0px;
 }
 
 
@@ -456,8 +465,8 @@ form button:focus {
 
 #logo-bottom {
     display: block;
-    margin: 50px auto;
-    width: 20%;
+    margin: 80px auto;
+    width: 200px;
     filter: drop-shadow(0px 5px 3px #00000093);
 }
 
