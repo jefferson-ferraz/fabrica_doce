@@ -50,16 +50,37 @@ header {
     margin: 20px auto 0px auto;
 }
 
+@media (max-width: 700px) {
+
+    #container-logo-top {
+        margin: 0px auto 0px auto;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    #container-logo-top {
+        margin: 30px auto 0px auto;
+    }
+}
+
 #logo-top {
     width: 250px;
     margin: 0px 0px -30px -10px;
     filter: drop-shadow(0px 5px 3px #00000041);   
 }
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
+
     #logo-top {
-        
-        
+        width: 200px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    #logo-top {
+        width: 150px;
     }
 }
 
@@ -71,11 +92,19 @@ header {
     font-size: 8em;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 700px) {
+    #container-logo-top h1 {
+        font-size: 6em;
+        margin: 30px 0px 10px -20px;
+    }
+}
+
+@media (max-width: 450px) {
+    
     #container-logo-top h1 {
         display: block;
-        font-size: 6em;
-        margin: 30px 0px 0px -20px;
+        font-size: 4em;
+        margin: 30px 0px 10px -20px;
     }
 }
 
