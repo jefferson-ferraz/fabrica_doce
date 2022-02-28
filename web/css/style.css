@@ -44,53 +44,45 @@ header {
     min-width: 300px;
 }
 
-
-
-
 #container-logo-top {
     position: relative;
     text-align: center;
-    margin: 0px auto;
-    
+    margin: 20px auto 0px auto;
 }
 
 #logo-top {
-    
-    
     width: 250px;
     margin: 0px 0px -30px -10px;
-    filter: drop-shadow(0px 5px 3px #00000041);
-    
+    filter: drop-shadow(0px 5px 3px #00000041);   
 }
 
-#mila {
-    display: inline-block;
-    margin: 0px 0px 0px 10px;
-    
+@media (max-width: 550px) {
+    #logo-top {
+        
+        
+    }
 }
 
-
-/*
-font-family: 'Philosopher', sans-serif;
-font-family: 'Poiret One', cursive;
-font-family: 'Style Script', cursive;
-*/
-
-
-
-#mila h1 {
+#container-logo-top h1 {
     font-family: 'Style Script';
-    margin: 0px 0px 0px -40px;
+    display: inline-block;
+    margin: 0px 0px 0px -30px;
     filter: drop-shadow(0px 5px 3px #00000041);
-    
-    
     font-size: 8em;
+}
+
+@media (max-width: 550px) {
+    #container-logo-top h1 {
+        display: block;
+        font-size: 6em;
+        margin: 30px 0px 0px -20px;
+    }
 }
 
 #container-logo-top hr {
     border: 4px solid burlywood;
     border-radius: 4px;
-    width: 800px;
+    width: 85%;
     margin-top: -10px;
 }
 
@@ -98,10 +90,14 @@ font-family: 'Style Script', cursive;
     font-family: 'Josefin Slab', serif;
     font-weight: 600;
     font-size: 2em;
-    
     margin: 20px 0px 40px 0px;
 }
 
+@media (max-width: 400px) {
+    #container-logo-top h2 {
+        font-size: 8vw;
+    }
+}
 
 
 
