@@ -473,4 +473,9 @@ footer a {
     text-decoration: none;
     color: burlywood;
     font-weight: bold;
+    transition: 0.4s;
+}
+
+footer a:hover {
+    color: wheat;
 }
